@@ -1,0 +1,102 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: #eee;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 20px;
+  background-color: #36f;
+}
+
+.header h1 {
+  width: 180px;
+  font-size: 28px;
+  line-height: 1;
+  color: #fff;
+  user-select: none;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  border-left: 1px solid #ffffff20;
+}
+
+.nav__btn {
+  padding: 20px;
+  height: 60px;
+
+  border: none;
+  border-right: 1px solid #ffffff20;
+  background-color: transparent;
+
+  font-size: 18px;
+  color: #fff;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav__btn.active {
+  background-color: rgb(24, 81, 254);
+}
+
+.nav__btn:hover {
+  background-color: rgb(24, 81, 254);
+}
+
+.content {
+  max-height: calc(100vh - 60px);
+  flex-grow: 1;
+  padding: 40px;
+}
+
+.graph__header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.graph__header select {
+  width: 100px;
+  height: 100%;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.graph__header button {
+  width: 100px;
+  height: 100%;
+
+  border: 1px solid #36f;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+.node {
+  padding: 20px;
+  min-width: 150px;
+  
+  border: 3px dashed #36f;
+  background-color: #fff;
+  border-radius: 20px;
+
+  font-size: 20px;
+  text-align: center;
+  
+  position: absolute;
+  user-select: none;
+  cursor: grab;
+}
